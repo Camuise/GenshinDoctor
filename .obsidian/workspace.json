@@ -30,33 +30,8 @@
               "icon": "lucide-file",
               "title": "00. Dashboard"
             }
-          },
-          {
-            "id": "2bfd85a0334ba380",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "02. Items/Silver Raven Insignia.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Silver Raven Insignia"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -191,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02. Items/Silver Raven Insignia.md",
+                "file": "02. Items/00. Dashboard.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Silver Raven Insignia"
+              "title": "Outline of 00. Dashboard"
             }
           },
           {
@@ -232,7 +207,7 @@
       "media-extended:Open media quick switcher": false
     }
   },
-  "active": "2bfd85a0334ba380",
+  "active": "feb93b85b9a5bf05",
   "lastOpenFiles": [
     "02. Items/Silver Raven Insignia.md",
     "02. Items/00. Dashboard.md",
