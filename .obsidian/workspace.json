@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "02. Items/00. Dashboard.md",
+                "file": "02. Items/Silver Raven Insignia.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "00. Dashboard"
+              "title": "Silver Raven Insignia"
             }
           }
         ]
@@ -166,13 +166,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02. Items/00. Dashboard.md",
+                "file": "02. Items/Silver Raven Insignia.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of 00. Dashboard"
+              "title": "Outline of Silver Raven Insignia"
             }
           },
           {
@@ -209,10 +209,10 @@
   },
   "active": "feb93b85b9a5bf05",
   "lastOpenFiles": [
-    "02. Items/Silver Raven Insignia.md",
+    "Dashboard.base",
     "02. Items/00. Dashboard.md",
+    "02. Items/Silver Raven Insignia.md",
     "01. Characters/00. Dashboard.md",
-    "01. Characters/01. All Characters.base",
     "01. Characters/Aloy.md",
     "01. Characters/Candace.md",
     "01. Characters/Gorou.md",
@@ -235,7 +235,6 @@
     "99. Meta/01. Templates/tpl-char.md",
     "01. Characters/Razor.md",
     "01. Characters/Noelle.md",
-    "01. Characters/Sucrose.md",
     "03. Bosses",
     "02. Items",
     "01. Characters",

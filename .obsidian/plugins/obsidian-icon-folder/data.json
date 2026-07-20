@@ -35,10 +35,10 @@
     "useInternalPlugins": false
   },
   "01. Characters": "LiUser",
-  "01. Characters/01. All Characters.base": "LiUsers",
   "02. Items": "LiBox",
   "03. Bosses": "LiSkull",
   "99. Meta/01. Templates/tpl-boss.md": "LiSkull",
   "99. Meta/01. Templates/tpl-char.md": "LiUser",
-  "99. Meta/01. Templates/tpl-item.md": "LiBox"
+  "99. Meta/01. Templates/tpl-item.md": "LiBox",
+  "Dashboard.base": "LiUsers"
 }
