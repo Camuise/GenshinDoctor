@@ -1,0 +1,44 @@
+{
+  "settings": {
+    "migrated": 6,
+    "iconPacksPath": ".obsidian/icons",
+    "fontSize": 16,
+    "emojiStyle": "native",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiSkull",
+      "LiBox",
+      "LiUser",
+      "LiUsers",
+      "LiPersonStanding"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInTitlePosition": "above",
+    "iconInFrontmatterEnabled": false,
+    "iconInFrontmatterFieldName": "icon",
+    "iconColorInFrontmatterFieldName": "iconColor",
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true,
+    "iconsInLinksEnabled": true,
+    "iconIdentifier": ":",
+    "lucideIconPackType": "native",
+    "debugMode": false,
+    "useInternalPlugins": false
+  },
+  "01. Characters": "LiUser",
+  "01. Characters/01. All Characters.base": "LiUsers",
+  "02. Items": "LiBox",
+  "03. Bosses": "LiSkull",
+  "99. Meta/01. Templates/tpl-boss.md": "LiSkull",
+  "99. Meta/01. Templates/tpl-char.md": "LiUser",
+  "99. Meta/01. Templates/tpl-item.md": "LiBox"
+}
