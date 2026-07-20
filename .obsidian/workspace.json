@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "99. Meta/01. Templates/tpl-boss.md",
+                "file": "03. Bosses/00. Dashboard.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "tpl-boss"
+              "title": "00. Dashboard"
             }
           }
         ]
@@ -223,17 +223,20 @@
       "media-extended:Open media quick switcher": false
     }
   },
-  "active": "cf60b9e549b1556d",
+  "active": "1de3756492e93556",
   "lastOpenFiles": [
-    "01. Characters/01. All Characters.base",
     "01. Characters/00. Dashboard.md",
+    "01. Characters/01. All Characters.base",
+    "02. Items/00. Dashboard.md",
+    "03. Bosses/00. Dashboard.md",
+    "02. Items/Untitled.md",
+    "99. Meta/01. Templates/tpl-item.md",
+    "99. Meta/01. Templates/tpl-char.md",
+    "99. Meta/01. Templates/tpl-boss.md",
     "01. Characters/Untitled.md",
     "01. Characters/Kaeya.md",
     "01. Characters/Kaeya.md",
     "Sucrose.md",
-    "99. Meta/01. Templates/tpl-item.md",
-    "99. Meta/01. Templates/tpl-char.md",
-    "99. Meta/01. Templates/tpl-boss.md",
     "03. Bosses",
     "02. Items",
     "01. Characters",

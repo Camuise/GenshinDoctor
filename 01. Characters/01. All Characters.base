@@ -1,0 +1,8 @@
+views:
+  - type: cards
+    name: Table
+    filters:
+      and:
+        - file.inFolder("01. Characters")
+        - '!file.name.startsWith("0")'
+    image: note.image
