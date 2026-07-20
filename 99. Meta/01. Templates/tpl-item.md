@@ -2,18 +2,31 @@
 type: item
 image: |-
   <%*
-  const title = tp.file.title;
+  const title = tp.file.title.replace(/ /g, "_");
   const url = `https://genshin-impact.fandom.com/wiki/${title}`;
-  try {
-    const response = await requestUrl({ url });
-    const parsedHtml = new DOMParser().parseFromString(response.text, 'text/html');
-    const img = parsedHtml.querySelector('img.pi-image-thumbnail');
-    console.log("IMG RESULT: ", img);
-    tR += img ? img.getAttribute('src').split('/revision')[0] : "ImageNotFound";
-  } catch (e) {
-    tR += "FetchError";
+  let result = "ImageNotFound";
+  let attempts = 3;
+
+  for (let i = 0; i < attempts; i++) {
+    try {
+      const response = await requestUrl({
+        url: url,
+        method: "GET",
+        headers: {
+          "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36"
+        }
+      });
+      const parsedHtml = new DOMParser().parseFromString(response.text, 'text/html');
+      const img = parsedHtml.querySelector('img.pi-image-thumbnail');
+
+      result = (img) ? img.getAttribute('src').split('/revision')[0] : "ImageNotFound";
+    } catch (e) {
+      if (i === attempts - 1) result = "FetchError";
+    }
   }
+  tR += result;
   %>
+total needed: "`= sum(pages('#character').where(p => contains(p.Item, this.file.link)).Item)`"
 ---
 # [<% tp.file.title %>](<<https://genshin-impact.fandom.com/wiki/><% tp.file.title %>>)
 
