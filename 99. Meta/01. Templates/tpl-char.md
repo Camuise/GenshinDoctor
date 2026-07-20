@@ -2,7 +2,7 @@
 type: character
 image: |-
   <%*
-  const title = tp.file.title;
+  const title = tp.file.title.replace(/ /g, "_");
   const url = `https://genshin-impact.fandom.com/wiki/${title}/Gallery`;
   try {
     const response = await requestUrl({ url });
@@ -14,7 +14,7 @@ image: |-
   }
   %>
 ---
-# [<% tp.file.title %>](<https://genshin-impact.fandom.com/wiki/<% tp.file.title %>>)
+# [<% tp.file.title %>](<<https://genshin-impact.fandom.com/wiki/><% tp.file.title %>>)
 
 ## Character Level
 
