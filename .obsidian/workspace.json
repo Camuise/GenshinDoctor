@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03. Bosses/00. Dashboard.md",
+                "file": "01. Characters/00. Dashboard.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -225,10 +225,11 @@
   },
   "active": "1de3756492e93556",
   "lastOpenFiles": [
+    "README.md",
+    "03. Bosses/00. Dashboard.md",
     "01. Characters/00. Dashboard.md",
     "01. Characters/01. All Characters.base",
     "02. Items/00. Dashboard.md",
-    "03. Bosses/00. Dashboard.md",
     "02. Items/Untitled.md",
     "99. Meta/01. Templates/tpl-item.md",
     "99. Meta/01. Templates/tpl-char.md",
