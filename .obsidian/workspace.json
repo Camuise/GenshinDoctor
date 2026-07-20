@@ -4,47 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "a0c5abbb68cbe741",
+        "id": "ef9081353322fe99",
         "type": "tabs",
         "children": [
           {
-            "id": "1de3756492e93556",
+            "id": "5b880d3b24fad951",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "bases",
               "state": {
-                "file": "01. Characters/00. Dashboard.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "file": "01. Characters/01. All Characters.base",
+                "viewName": "Table"
               },
-              "icon": "lucide-file",
-              "title": "00. Dashboard"
-            }
-          }
-        ]
-      },
-      {
-        "id": "c88990d7aae06133",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "3452ce94a796ff52",
-            "type": "leaf",
-            "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-layout-grid",
+              "title": "01. All Characters"
             }
           }
         ]
@@ -182,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Untitled.md",
+                "file": "01. Characters/01. All Characters.base",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Untitled"
+              "title": "Outline of 01. All Characters"
             }
           },
           {
@@ -223,27 +196,89 @@
       "media-extended:Open media quick switcher": false
     }
   },
-  "active": "1de3756492e93556",
+  "floating": {
+    "id": "95aba18d6fd5e2e3",
+    "type": "floating",
+    "children": [
+      {
+        "id": "2ca2e2b75c8f2fd6",
+        "type": "window",
+        "children": [
+          {
+            "id": "ce986da85e93f975",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "4690772aa75cc4eb",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "01. Characters/00. Dashboard.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "00. Dashboard"
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 356,
+        "y": 286,
+        "width": 600,
+        "height": 600,
+        "maximize": false,
+        "zoom": 0
+      }
+    ]
+  },
+  "active": "5b880d3b24fad951",
   "lastOpenFiles": [
-    "README.md",
-    "03. Bosses/00. Dashboard.md",
     "01. Characters/00. Dashboard.md",
+    "01. Characters/Aloy.md",
+    "01. Characters/Candace.md",
+    "01. Characters/Gorou.md",
+    "01. Characters/Faruzan.md",
+    "01. Characters/Ningguang.md",
+    "01. Characters/Arataki Itto.md",
+    "01. Characters/Beidou.md",
+    "01. Characters/Chongyun.md",
+    "01. Characters/Traveler.md",
+    "01. Characters/Mika.md",
     "01. Characters/01. All Characters.base",
-    "02. Items/00. Dashboard.md",
-    "02. Items/Untitled.md",
-    "99. Meta/01. Templates/tpl-item.md",
+    "01. Characters/Traveller.md",
+    "01. Characters/Aether.md",
+    "01. Characters/Lisa.md",
+    "01. Characters/Barbara.md",
+    "01. Characters/Amber.md",
+    "01. Characters/Xinyan.md",
+    "01. Characters/Fischl.md",
+    "01. Characters/Lynette.md",
+    "01. Characters/Xingqiu.md",
     "99. Meta/01. Templates/tpl-char.md",
-    "99. Meta/01. Templates/tpl-boss.md",
-    "01. Characters/Untitled.md",
+    "01. Characters/Razor.md",
+    "01. Characters/Noelle.md",
+    "01. Characters/Sucrose.md",
     "01. Characters/Kaeya.md",
-    "01. Characters/Kaeya.md",
-    "Sucrose.md",
+    "99. Meta/01. Templates/tpl-item.md",
     "03. Bosses",
     "02. Items",
     "01. Characters",
     "99. Meta/01. Templates",
     "99. Meta/00. Attachments",
-    "99. Meta",
-    "Welcome.md"
+    "99. Meta"
   ]
 }
