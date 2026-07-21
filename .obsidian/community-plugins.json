@@ -4,5 +4,7 @@
   "obsidian-git",
   "templater-obsidian",
   "obsidian-icon-folder",
-  "media-extended"
+  "media-extended",
+  "obsidian-meta-bind-plugin",
+  "js-engine"
 ]

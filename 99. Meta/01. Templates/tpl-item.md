@@ -26,16 +26,50 @@ image: |-
   }
   tR += result;
   %>
-total needed: "`= sum(pages('#character').where(p => contains(p.Item, this.file.link)).Item)`"
+need: 0
 ---
 # [<% tp.file.title %>](<<https://genshin-impact.fandom.com/wiki/><% tp.file.title %>>)
 
 ## Characters Requiring This
 
-```dataview
-TABLE Item as "Quantity Needed"
-FROM #character
-WHERE Item != null AND contains(any(Item), this.file.link)
+```js-engine
+const mb = engine.getPlugin('obsidian-meta-bind-plugin')?.api;
+const dvApi = app.plugins.getPlugin('dataview')?.api;
+const combinedSumText = "***All Characters***";
+
+if (!mb || !dvApi) {
+  return engine.markdown.create('Missing Meta Bind or Dataview plugin.');
+}
+
+const itemName = context.file.basename;
+const rows = dvApi.pages('"01. Characters"').array()
+  .flatMap(page => page.file.lists.array()
+    .filter(listItem => listItem.text?.includes(itemName))
+    .map(listItem => ({
+      character: page.file.name,
+      amount: Number(listItem.amt ?? 0),
+    })));
+
+// calculate total amount needed, then bind to frontmatter
+const total = rows.reduce((sum, row) => sum + row.amount, 0);
+const totalTarget = mb.createBindTarget('frontmatter', context.file.path, ['need']);
+mb.setMetadata(totalTarget, total);
+
+// add sum to table
+rows.push({ character: combinedSumText, amount: total });
+
+// add square brackets around character names, but not for the total row
+rows.forEach(row => {
+  if (row.character !== combinedSumText) {
+    row.character = `[[${row.character}]]`;
+  }
+});
+
+const tableRows = rows.length > 0
+  ? rows.map(row => `| ${row.character} | ${row.amount} |`).join('\n')
+  : '| - | - |';
+
+return engine.markdown.create(`| Character(s) | Amount Needed |\n| --- | --- |\n${tableRows}`);
 ```
 
 ## Sources
