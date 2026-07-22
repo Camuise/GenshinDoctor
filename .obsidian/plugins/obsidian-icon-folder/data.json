@@ -39,6 +39,6 @@
   "03. Bosses": "LiSkull",
   "99. Meta/01. Templates/tpl-boss.md": "LiSkull",
   "99. Meta/01. Templates/tpl-char.md": "LiUser",
-  "99. Meta/01. Templates/tpl-item.md": "LiBox",
-  "Dashboard.base": "LiUsers"
+  "Dashboard.base": "LiUsers",
+  "99. Meta/01. Templates/tpl-item.md": "LiBox"
 }

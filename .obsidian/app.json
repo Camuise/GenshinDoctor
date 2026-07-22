@@ -1,5 +1,6 @@
 {
   "attachmentFolderPath": "99. Meta/00. Attachments",
-  "newFileLocation": "current",
-  "alwaysUpdateLinks": true
+  "newFileLocation": "folder",
+  "alwaysUpdateLinks": true,
+  "newFileFolderPath": "02. Items"
 }

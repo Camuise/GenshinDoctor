@@ -6,11 +6,13 @@ views:
         - file.inFolder("01. Characters")
         - '!file.name.startsWith("0")'
     image: note.image
-  - type: table
-    name: Items
+  - type: cards
+    name: 02. Items
     filters:
       and:
         - file.inFolder("02. Items")
         - '!file.name.startsWith("0")'
     order:
       - file.name
+      - total needed
+    image: note.image

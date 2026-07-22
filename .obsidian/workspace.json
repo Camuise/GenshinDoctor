@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "fb850bf8c729b585",
+        "id": "e384533612c2d846",
         "type": "tabs",
         "children": [
           {
-            "id": "a40cc4944a4c9e56",
+            "id": "7e04724a812fcc5f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "01. Characters/00. Dashboard.md",
+                "file": "02. Items/00. Dashboard.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -32,27 +32,17 @@
             }
           },
           {
-            "id": "913cce2bfa12a941",
+            "id": "bb00f758ddf168f4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "split-diff-view",
               "state": {
-                "file": "99. Meta/01. Templates/tpl-item.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
+                "aFile": ".obsidian/workspace.json",
+                "bFile": ".obsidian/workspace.json",
+                "aRef": ""
               },
-              "icon": "lucide-file",
-              "title": "tpl-item"
+              "icon": "diff",
+              "title": "Diff: workspace.json  (Working Tree)"
             }
           }
         ],
@@ -215,8 +205,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -233,35 +222,35 @@
       "media-extended:Open media quick switcher": false
     }
   },
-  "active": "913cce2bfa12a941",
+  "active": "288206fc414e825c",
   "lastOpenFiles": [
+    "02. Items/00. Dashboard.md",
     "02. Items/Silver Raven Insignia.md",
+    "02. Items/Mist Grass Wick.md",
+    "02. Items/Mist Grass.md",
+    "01. Characters/Ningguang.md",
+    "99. Meta/01. Templates/tpl-item.md",
+    "01. Characters/Kaeya.md",
+    "01. Characters/Amber.md",
+    "01. Characters/Arataki Itto.md",
+    "02. Items/Adventurer's Experience.md",
+    "01. Characters/Kaeyagffgdhfgdgfdgfd.md",
+    "01. Characters/00. Dashboard.md",
+    "Dashboard.base",
+    "01. Characters/Gorou.md",
+    "01. Characters/Lisa.md",
+    "01. Characters/Fischl.md",
+    "01. Characters/Faruzan.md",
+    "01. Characters/Chongyun.md",
+    "01. Characters/Candace.md",
+    "01. Characters/Beidou.md",
+    "01. Characters/Barbara.md",
+    "01. Characters/Aloy.md",
     "99. Meta/01. Templates/tpl-boss.md",
     "example.md",
-    "Dashboard.base",
-    "01. Characters/00. Dashboard.md",
     "README.md",
-    "02. Items/00. Dashboard.md",
     "01. Characters/Xinyan.md",
-    "01. Characters/Aloy.md",
     "01. Characters/Adventurer's Experience.md",
-    "01. Characters/Kaeya.md",
-    "01. Characters/Mist Grass Wick.md",
-    "01. Characters/Arataki Itto.md",
-    "99. Meta/01. Templates/tpl-item.md",
-    "99. Meta/01. Templates/tpl-char.md",
-    "01. Characters/Amber.md",
-    "01. Characters/Candace.md",
-    "01. Characters/Gorou.md",
-    "01. Characters/Faruzan.md",
-    "01. Characters/Ningguang.md",
-    "01. Characters/Beidou.md",
-    "01. Characters/Chongyun.md",
-    "01. Characters/Traveler.md",
-    "01. Characters/Mika.md",
-    "01. Characters/Traveller.md",
-    "01. Characters/Aether.md",
-    "01. Characters/Lisa.md",
     "03. Bosses",
     "02. Items",
     "01. Characters",
