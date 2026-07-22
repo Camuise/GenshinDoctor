@@ -2,7 +2,7 @@
 type: character
 image: https://static.wikia.nocookie.net/gensin-impact/images/8/8e/Noelle_Icon.png
 ---
-# Noelle
+# [Noelle](<<https://genshin-impact.fandom.com/wiki/>Noelle>)
 
 ## Character Level
 

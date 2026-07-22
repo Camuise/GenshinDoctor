@@ -2,5 +2,6 @@
   "attachmentFolderPath": "99. Meta/00. Attachments",
   "newFileLocation": "folder",
   "alwaysUpdateLinks": true,
-  "newFileFolderPath": "02. Items"
+  "newFileFolderPath": "02. Items",
+  "focusNewTab": false
 }
