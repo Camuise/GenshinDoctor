@@ -44,7 +44,9 @@ if (!mb || !dvApi) {
 const itemName = context.file.basename;
 const rows = dvApi.pages('"01. Characters"').array()
   .flatMap(page => page.file.lists.array()
-    .filter(listItem => listItem.text?.includes(itemName))
+    .filter(listItem => {
+      return listItem.outlinks?.some(link => link.path === context.file.path);
+    })
     .map(listItem => ({
       character: page.file.name,
       amount: Number(listItem.amt ?? 0),
@@ -52,8 +54,6 @@ const rows = dvApi.pages('"01. Characters"').array()
 
 // calculate total amount needed, then bind to frontmatter
 const total = rows.reduce((sum, row) => sum + row.amount, 0);
-const totalTarget = mb.createBindTarget('frontmatter', context.file.path, ['need']);
-mb.setMetadata(totalTarget, total);
 
 // add sum to table
 rows.push({ character: combinedSumText, amount: total });
@@ -68,6 +68,15 @@ rows.forEach(row => {
 const tableRows = rows.length > 0
   ? rows.map(row => `| ${row.character} | ${row.amount} |`).join('\n')
   : '| - | - |';
+
+if (rows.length > 0) {
+  const totalTarget = mb.createBindTarget('frontmatter', context.file.path, ['need']);
+  
+  // Delay the write slightly to prevent race conditions during file creation
+  setTimeout(() => {
+    mb.setMetadata(totalTarget, total);
+  }, 100); 
+}
 
 return engine.markdown.create(`| Character(s) | Amount Needed |\n| --- | --- |\n${tableRows}`);
 ```
