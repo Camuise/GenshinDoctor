@@ -8,6 +8,6 @@ image: https://static.wikia.nocookie.net/gensin-impact/images/b/b2/Faruzan_Icon.
 
 ### Lv ->
 
-- Item::
+- [[Mist Veiled Lead Elixir]] (amt:: 3)
 
 ## Weapon
