@@ -2,17 +2,18 @@
 type: character
 image: https://static.wikia.nocookie.net/gensin-impact/images/b/b6/Kaeya_Icon.png
 ---
-# [Kaeya](<<https://genshin-impact.fandom.com/wiki/>Kaeya>)
+# [Kaeya](<https://genshin-impact.fandom.com/wiki/Kaeya>)
 
 ## Character Level
+
 ### Lv 60 -> 70
 
 - [[Adventurer's Experience]] (amt:: )
 - [[Silver Raven Insignia]] (amt:: 18)
 
-## Weapon: Prototype Rancour 
+## Weapon: Prototype Rancour
 
-###  Lv. 20 -> 40
+### Lv. 20 -> 40
 
 - [[Mist Veiled Lead Elixir]] (amt:: 3)
 
