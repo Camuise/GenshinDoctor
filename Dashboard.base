@@ -14,5 +14,5 @@ views:
         - '!file.name.startsWith("0")'
     order:
       - file.name
-      - total needed
+      - need
     image: note.image

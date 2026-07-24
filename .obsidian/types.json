@@ -4,8 +4,6 @@
     "cssclasses": "multitext",
     "tags": "tags",
     "image": "text",
-    "totalNeeded": "number",
-    "total needed": "text",
     "need": "number"
   }
 }
