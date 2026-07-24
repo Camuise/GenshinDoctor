@@ -5,6 +5,7 @@
     "tags": "tags",
     "image": "text",
     "totalNeeded": "number",
-    "total needed": "text"
+    "total needed": "text",
+    "need": "number"
   }
 }

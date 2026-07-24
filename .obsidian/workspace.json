@@ -8,42 +8,18 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b26bca46ab450168",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "01. Characters/Candace.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Candace"
-            }
-          },
-          {
-            "id": "a8bb5e4ad9f1bc76",
+            "id": "05a432aa591d514b",
             "type": "leaf",
             "state": {
               "type": "split-diff-view",
               "state": {
-                "aFile": "01. Characters/Kaeya.md",
-                "bFile": "01. Characters/Kaeya.md",
+                "aFile": "02. Items/Mist Grass.md",
+                "bFile": "02. Items/Mist Grass.md",
                 "aRef": "HEAD",
                 "bRef": ""
               },
               "icon": "diff",
-              "title": "Diff: Kaeya  (Index)"
+              "title": "Diff: Mist Grass  (Index)"
             }
           },
           {
@@ -163,12 +139,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Untitled.md",
+                "file": "02. Items/Mist Grass.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Untitled"
+              "title": "Outgoing links from Mist Grass"
             }
           },
           {
@@ -206,13 +182,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "02. Items/Silver Raven Insignia.md",
+                "file": "02. Items/Mist Grass.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Silver Raven Insignia"
+              "title": "Outline of Mist Grass"
             }
           },
           {
@@ -247,35 +223,36 @@
       "media-extended:Open media quick switcher": false
     }
   },
-  "active": "288206fc414e825c",
+  "active": "cf60b9e549b1556d",
   "lastOpenFiles": [
-    "99. Meta/01. Templates/tpl-item.md",
-    "02. Items/00. Dashboard.md",
+    "99. Meta/02. Scripts/recalc-items.js",
+    "99. Meta/02. Scripts",
     "02. Items/Mist Grass.md",
-    "01. Characters/Kaeya.md",
-    "01. Characters/Noelle.md",
+    "99. Meta/01. Templates/tpl-item.md",
     "02. Items/Mist Veiled Lead Elixir.md",
+    "01. Characters/Kaeya.md",
     "01. Characters/Faruzan.md",
+    "01. Characters/Fischl.md",
+    "01. Characters/Gorou.md",
+    "01. Characters/Lisa.md",
+    "01. Characters/Lynette.md",
+    "01. Characters/Mika.md",
+    "01. Characters/Ningguang.md",
+    "01. Characters/Noelle.md",
+    "01. Characters/Razor.md",
+    "01. Characters/Sucrose.md",
+    "01. Characters/Traveler.md",
+    "01. Characters/Xingqiu.md",
+    "01. Characters/Xinyan.md",
     "01. Characters/Candace.md",
+    "Dashboard.base",
+    "99. Meta/01. Templates/tpl-char.md",
+    "README.md",
+    "02. Items/00. Dashboard.md",
     "02. Items/Silver Raven Insignia.md",
     "01. Characters/Mist Veiled Mercury Elixir.md",
     "01. Characters/Chongyun.md",
     "01. Characters/00. Dashboard.md",
-    "01. Characters/Razor.md",
-    "01. Characters/Lisa.md",
-    "01. Characters/Xingqiu.md",
-    "01. Characters/Barbara.md",
-    "01. Characters/Amber.md",
-    "01. Characters/Xinyan.md",
-    "01. Characters/Fischl.md",
-    "01. Characters/Traveler.md",
-    "01. Characters/Lynette.md",
-    "01. Characters/Mika.md",
-    "01. Characters/Beidou.md",
-    "01. Characters/Arataki Itto.md",
-    "01. Characters/Aloy.md",
-    "01. Characters/Ningguang.md",
-    "Dashboard.base",
     "03. Bosses",
     "02. Items",
     "01. Characters",

@@ -1,0 +1,6 @@
+{
+  "startupScripts": [
+    "99. Meta/02. Scripts/recalc-items.js"
+  ],
+  "disableStatusbar": false
+}

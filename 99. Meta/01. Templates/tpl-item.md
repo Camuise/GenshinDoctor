@@ -38,46 +38,54 @@ const dvApi = app.plugins.getPlugin('dataview')?.api;
 const combinedSumText = "***All Characters***";
 
 if (!mb || !dvApi) {
-  return engine.markdown.create('Missing Meta Bind or Dataview plugin.');
+  return engine.markdown.create('> [!missing] Missing Meta Bind or Dataview plugin.');
 }
 
-const itemName = context.file.basename;
+// the actual logic for finding characters that need this item
 const rows = dvApi.pages('"01. Characters"').array()
   .flatMap(page => page.file.lists.array()
+    // collect only list items that link to this items
     .filter(listItem => {
-      return listItem.outlinks?.some(link => link.path === context.file.path);
+      return listItem.outlinks?.some(link => link.path === context.file.basename);
     })
+    // map to a simpler object with character name and amount
     .map(listItem => ({
       character: page.file.name,
       amount: Number(listItem.amt ?? 0),
-    })));
-
-// calculate total amount needed, then bind to frontmatter
+    }))
+    // deduplicate rows w/ same character name by summing amounts
+    .reduce((acc, curr) => {
+      const existing = acc.find(row => row.character === curr.character);
+      if (existing) {
+        existing.amount += curr.amount;
+      } else {
+        acc.push(curr);
+      }
+      return acc;
+    }, [])
+  );
+// total sum
 const total = rows.reduce((sum, row) => sum + row.amount, 0);
-
-// add sum to table
 rows.push({ character: combinedSumText, amount: total });
 
-// add square brackets around character names, but not for the total row
-rows.forEach(row => {
-  if (row.character !== combinedSumText) {
-    row.character = `[[${row.character}]]`;
-  }
-});
-
-const tableRows = rows.length > 0
-  ? rows.map(row => `| ${row.character} | ${row.amount} |`).join('\n')
-  : '| - | - |';
-
+// bind to frontmatter (gah)
 if (rows.length > 0) {
   const totalTarget = mb.createBindTarget('frontmatter', context.file.path, ['need']);
-  
-  // Delay the write slightly to prevent race conditions during file creation
-  setTimeout(() => {
-    mb.setMetadata(totalTarget, total);
-  }, 100); 
+  mb.setMetadata(totalTarget, total);
 }
 
+// generate the table. no need to verify length since we always have the total row
+const tableRows = rows.map(row => { 
+  const char = row.character;
+  if (char !== combinedSumText) {
+    // add image and square brackets around character name
+    const charPage = dvApi.pages(`"/01. Characters/${char}.md"`);
+    const imageLinkFromPage = charPage.file.frontmatter?.image;
+    const imageMarkdown = imageLinkFromPage ? `![${char}](${imageLinkFromPage}) ` : '';
+    row.character = `${imageMarkdown}[[${char}]]`;
+  };
+  return `| ${char} | ${row.amount} |`; 
+}).join('\n')
 return engine.markdown.create(`| Character(s) | Amount Needed |\n| --- | --- |\n${tableRows}`);
 ```
 
