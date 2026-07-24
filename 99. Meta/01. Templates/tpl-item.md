@@ -28,7 +28,7 @@ image: |-
   %>
 need: 0
 ---
-# [<% tp.file.title %>](<<https://genshin-impact.fandom.com/wiki/><% tp.file.title %>>)
+# [<% tp.file.title %>](<https://genshin-impact.fandom.com/wiki/<% tp.file.title %>>)
 
 ## Characters Requiring This
 
@@ -81,7 +81,8 @@ const tableRows = rows.map(row => {
     // add image and square brackets around character name
     const charPage = dvApi.pages(`"/01. Characters/${char}.md"`);
     const imageLinkFromPage = charPage.file.frontmatter?.image;
-    const imageMarkdown = imageLinkFromPage ? `![${char}](${imageLinkFromPage}) ` : '';
+    const imageMarkdown = imageLinkFromPage
+      ? `![${char}](${imageLinkFromPage}) ` : '';
     row.character = `${imageMarkdown}[[${char}]]`;
   };
   return `| ${char} | ${row.amount} |`; 
